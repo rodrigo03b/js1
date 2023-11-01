@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <div id="caixa2">
+        <input type="number" name="sm1" id="sm1" placeholder="maior">
+        <input type="number" name="sm2" id="sm2" placeholder="menor">
+        <br>
+        <input type="button" value="somar" onclick="somar()" class="bta">
+        <input type="button" value="subtrair" onclick="menos()" class="bta">
+        <br>
+        <input type="button" value="multiplicar" onclick="multiplicar()" class="bta">
+        <input type="button" value="dividir" onclick="divizao()" class="bta">
+        <div id="resultado"></div>
+    </div>
+    <script>
+        function somar(){
+            var nf1 = document.getElementById('sm1')
+            var nf2 =  document.getElementById('sm2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(nf1.value)
+            var n2 = Number(nf2.value)
+            var s = n1 + n2
+            res.innerHTML = `o resultado e ${s}`
+
+        }
+        function menos(){
+            var nf1 = document.getElementById('sm1')
+            var nf2 =  document.getElementById('sm2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(nf1.value)
+            var n2 = Number(nf2.value)
+            var s = n1 - n2
+            res.innerHTML = `o resultado e ${s}`
+        }
+        function multiplicar(){
+            var nf1 = document.getElementById('sm1')
+            var nf2 =  document.getElementById('sm2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(nf1.value)
+            var n2 = Number(nf2.value)
+            var s = n1 * n2
+            res.innerHTML = `o resultado e ${s}`
+        }
+        function divizao(){
+            var nf1 = document.getElementById('sm1')
+            var nf2 =  document.getElementById('sm2')
+            var res = document.getElementById('resultado')
+            var n1 = Number(nf1.value)
+            var n2 = Number(nf2.value)
+            var s = n1 / n2
+            res.innerHTML = `o resultado e ${s}`
+        }
+    </script>
+</body>
+</html>

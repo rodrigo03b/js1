@@ -1,0 +1,13 @@
+body{
+    background-color: gray;
+}
+.caixa1{
+    background-color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 370px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 30px 30px 30px black;
+    line-height: 30px;
+}
