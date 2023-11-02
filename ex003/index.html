@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teste1</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        #caixa1{
+            background-color: aliceblue;
+            width: 400px;
+            height: 200px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <div id="caixa1">
+            <input type="number" name="numero" id="nmr1" required>
+            <input type="button" value="enviar" onclick="cac()">
+            <div id="res"></div>
+        </div>
+    </main>
+    <script>
+        function cac(){
+            var n1 = document.getElementById('nmr1').value
+            var n2 = document.getElementById('res')
+            n2.innerHTML = `você tem ${n1} anos de idade`
+            if (n1 < 16){
+            n2.innerHTML = '<p>nao vota</p>'
+            }else if(n1 < 18 || n1 > 65){
+                    n2.innerHTML = '<p>voto opicional</p>'
+                }
+                else{
+                    n2.innerHTML = '<p>voto obrigatorio</p>'
+                }
+                    }
+    </script>
 </body>
 </html>

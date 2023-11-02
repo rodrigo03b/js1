@@ -19,7 +19,14 @@
     </main>
     <script>
         function ver(){
-            
+            var na = document.getElementById('nacional').value
+            var res = document.getElementById('resultadoo')
+            res.innerHTML = `<p>você é do(a) ${na}</p>`
+            if(na != 'brasil'){
+                res.innerHTML = '<p>você é estrangeiro</p>'
+            }else{
+                res.innerHTML = '<p>você é brasileiro</p>'
+            }
         }
     </script>
 </body>
