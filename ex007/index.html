@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horario</title>
+</head>
+<body>
+    <input type="button" value="teste" onclick="hora()">
+    <div id="result"></div>
+    <br>
+    <input type="button" value="teste2" onclick="dia()">
+    <div id="tert"></div>
+    <script>
+        function hora(){
+            var res = document.getElementById('result')
+            var agora = new Date()
+            var rr = agora.getHours()
+            res.innerHTML = `são exatamente ${rr} horas`
+            if(rr <= 12){
+                res.innerHTML = 'bom dia'
+            }else if(rr > 18){
+                res.innerHTML = 'boa noite'
+            }else{
+                res.innerHTML = 'boa tarde'
+            }
+        }
+        function dia(){
+            var re = document.getElementById('tert')
+            var hora = new Date()
+            var ff = hora.getDay()
+            re.innerHTML = `hoje e ${ff}`
+            switch(ff){
+                case 0:
+                    re.innerHTML = 'DOMINGOO'
+                    break
+                    case 1:
+                    re.innerHTML = 'SEGUNDA'
+                    break
+                    case 2:
+                    re.innerHTML = 'TERÇA'
+                    break
+                    case 3:
+                    re.innerHTML = 'QUARTA'
+                    break
+                    case 4:
+                    re.innerHTML = 'QUINTA'
+                    break
+                    case 5:
+                    re.innerHTML = 'SEXTA'
+                    break
+                    case 6:
+                    re.innerHTML = 'SABADO'
+                    break
+            }
+
+        }
+    </script>
+</body>
+</html>
