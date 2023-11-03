@@ -13,16 +13,16 @@
     <div id="tert"></div>
     <script>
         function hora(){
+            var horario = new Date()
+            var agora = horario.getHours()
             var res = document.getElementById('result')
-            var agora = new Date()
-            var rr = agora.getHours()
-            res.innerHTML = `são exatamente ${rr} horas`
-            if(rr <= 12){
-                res.innerHTML = 'bom dia'
-            }else if(rr > 18){
-                res.innerHTML = 'boa noite'
+            res.innerHTML = `são exatamente ${agora} hrs`
+            if(agora < 12){
+                res.innerHTML += '<p>bom dia</p>'
+            }else if(agora > 18){
+                res.innerHTML += '<p>boa noite</p>'
             }else{
-                res.innerHTML = 'boa tarde'
+                res.innerHTML += '<p>boa tarde</p>'
             }
         }
         function dia(){
