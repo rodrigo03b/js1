@@ -12,7 +12,7 @@
 /*fonts pra teste*/
     --fonte-01:'Bebas Neue', sans-serif;
     --fonte-02:  'Dancing Script', cursive;
-    --fonte-02:  'Cormorant Garamond', serif;;
+    --fonte-02:  'Cormorant Garamond', serif;
 }
 *{
     padding: 0;
@@ -42,7 +42,7 @@ a{
     margin-left: 20px;
     color: var(--cor-05);
 }
-nav a:hover{
+a:hover{
     background-color: var(--cor-01);
     border-radius: 20px;
     padding-right: 18px;
@@ -66,6 +66,7 @@ main h1{
 main #txt1{
     padding: 20px;
     text-align: justify;
-    font-family: var(--fonte-01);
+    font-family: sans-serif;
     text-indent: 20px;
+    font-weight: 300;
 }
