@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 89, 255);
+        }
+        header{
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        section{
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 5px black;
+        }
+        footer{
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>calculadora</h1>
+    </header>
+    <section>
+        <div><input type="number" name="num1" id="num1"></div>
+        <div><input type="number" name="num2" id="num2"></div>
+        <input type="button" value="calcular" onclick="valores()">
+        <div id="res"></div>
+    </section>
+    <footer>
+        <p>&copy;rodrigo</p>
+    </footer>
+    <script>
+        function valores(){
+            var pr1 = document.getElementById('num1')
+            var pr2 = document.getElementById('num2')
+            var res = document.getElementById('res')
+            var f1 = Number(pr1.value)
+            var f2 = Number(pr2.value)
+            var s = f1 + f2
+            res.innerHTML = `o soma entre ${f1} e ${f2} e de ${s}`
+        }
+    </script>
+</body>
+</html>
