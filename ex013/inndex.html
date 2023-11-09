@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: deepskyblue;
+        }
+        header{
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        section{
+            background-color: white;
+            width: 500px;
+            padding: 10px;
+            border-radius: 20px;
+            margin: auto;
+            box-shadow: 6px 6px 10px black;
+        }
+        section > input#nacionalidade{
+            display: block;
+            margin: auto;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 5px 4px 10px black;
+        }
+        #bta{
+            display: block;
+            margin: auto;
+            border-radius: 20px;
+            border: 3px solid rgb(43, 183, 183);
+            box-shadow: 5px 5px 10px black;
+        }
+        #res{
+            text-align: center;
+        }
+        footer{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>qual a sua nacionalidade?</h1>
+    </header>
+    <section>
+        <input type="text" name="pais" id="nacionalidade" required>
+        <br>
+        <input type="submit" value="verificar" id="bta" onclick="testar()">
+        <div id="res"></div>
+    </section>
+    <br>
+    <section>
+        <input type="button" value="testar" onclick="test()">
+        <div id="result"></div>
+    </section>
+    <br>
+    <section> 
+    <input type="button" value="testar" onclick="horario()">
+        <div id="hars"></div>
+    </section>     
+    <script>
+        function testar(){
+            var cx1 = document.getElementById('nacionalidade')
+            var res = document.querySelector('div#res')
+            var txt1 = cx1.value
+            if(txt1 != 0){
+                res.innerHTML = `voce e ${txt1}`
+            }else{
+                window.alert('erro!') 
+            }
+        }
+        function test(){
+            var result = document.querySelector('div#result')
+            var data = new Date()
+            var dia = data.getDay()
+            result.innerHTML = `hoje é ${dia}`
+            switch(dia){
+                case 0: 
+                result.innerHTML = 'domingo'
+                break
+                case 1: 
+                result.innerHTML = 'segunda-feira'
+                break
+                case 2: 
+                result.innerHTML = 'terça-feira'
+                break
+                case 3: 
+                result.innerHTML = 'quarta-feira'
+                break
+                case 4: 
+                result.innerHTML = 'quinta-feira'
+                break
+                case 5: 
+                result.innerHTML = 'sexta-feira'
+                break
+                case 6: 
+                result.innerHTML = 'sabado'
+                break
+            }
+        }
+        function horario(){
+            var dia = new Date()
+            var hora = dia.getHours()
+            var min = dia.getMinutes()
+            var sec = dia.getSeconds()
+            var rest = document.getElementById('hars')
+            rest.innerHTML = `são  extatamente ${hora} horas  ${min} minutos e ${sec} segunndos`
+    }
+    </script>
+</body>
+</html>
