@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tabuada</title>
+</head>
+<body>
+    <header>
+        <h1>tabuada</h1>
+    </header>
+    <section>
+        <input type="number" name="numero" id="numero">
+    </section>
+    <br>
+    <section>
+        <input type="button" value="soma" onclick="mais()">
+        <input type="button" value="multiplicação" onclick="vezes()">
+        <input type="button" value="subtração" onclick="menos()">
+        <input type="button" value="divizão" onclick="dividir()">
+    </section>
+    <br>
+    <section>
+        <h1>soma</h1>
+        <div id="soma"></div>
+        <h1>multiplicaçao</h1>
+        <div id="multiplicaçao"></div>
+        <h1>subtração</h1>
+        <div id="subtração"></div>
+        <h1>divizão</h1>
+        <div id="divizão">  </div>
+    </section>
+    <script>
+        function mais(){
+            var nmr = document.getElementById('numero')
+            var resu = document.getElementById('soma')
+            var nm1 = Number(nmr.value)
+            resu.innerHTML = '';
+            var s1 = 1 + nm1
+            var s2 = 2 + nm1
+            var s3 = 3 + nm1
+            var s4 = 4 + nm1
+            var s5 = 5 + nm1
+            var s6 = 6 + nm1
+            var s7 = 7 + nm1
+            var s8 = 8 + nm1
+            var s9 = 9 + nm1
+            var s10 = 10 + nm1
+            resu.innerHTML += `1 + ${nm1} = ${s1}<br>`
+            resu.innerHTML += `2 + ${nm1} = ${s2}<br>`
+            resu.innerHTML += `3 + ${nm1} = ${s3}<br>`
+            resu.innerHTML += `4 + ${nm1} = ${s4}<br>`
+            resu.innerHTML += `5 + ${nm1} = ${s5}<br>`
+            resu.innerHTML += `6 + ${nm1} = ${s6}<br>`
+            resu.innerHTML += `7 + ${nm1} = ${s7}<br>`
+            resu.innerHTML += `8 + ${nm1} = ${s8}<br>`
+            resu.innerHTML += `9 + ${nm1} = ${s9}<br>`
+            resu.innerHTML += `10 + ${nm1} = ${s10}<br>`
+        }
+        function vezes(){
+            var vz1 = document.getElementById('numero')
+            var rezt = document.querySelector('div#multiplicaçao')
+            var n2 = Number(vz1.value)
+            rezt.innerHTML = ''
+            for(var vz = 1; vz <= 10; vz++){
+                rezt.innerHTML += `${vz} * ${n2} = ${vz * n2}<br>`
+            }
+        }
+        function menos(){
+            
+        }
+        function dividir(){}
+    </script>
+</body>
+</html>

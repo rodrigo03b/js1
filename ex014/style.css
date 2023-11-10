@@ -1,0 +1,16 @@
+body{
+    background-color: deepskyblue;
+}
+header{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+section{
+    background-color: #fff;
+    width: 500px;
+    padding: 9px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
