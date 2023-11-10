@@ -14,3 +14,23 @@ section{
     border-radius: 20px;
     box-shadow: 5px 5px 10px black;
 }
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#soma{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#multiplicaçao{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#subtração{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#diviazão{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}

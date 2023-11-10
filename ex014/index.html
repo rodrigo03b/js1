@@ -68,9 +68,23 @@
             }
         }
         function menos(){
-            
+            var mns = document.getElementById('numero')
+            var set = document.getElementById('subtração')
+            var sbt = Number(mns.value)
+            set.innerHTML = ''
+            for(var pp = 1; pp <= 10; pp++){
+                set.innerHTML += `${pp} - ${sbt} = ${pp - sbt}<br>`
+            }
         }
-        function dividir(){}
+        function dividir(){
+            var dvr = document.getElementById('numero')
+            var rdd = document.getElementById('divizão')
+            var divdir = Number(dvr.value)
+            rdd.innerHTML = ''//para que os resultados nao fiquem um embaixo do outro
+            for(var dvd = 1; dvd <= 10; dvd++){
+                rdd.innerHTML = `${dvd} / ${divdir}= ${dvd / divdir}`
+            }
+        }
     </script>
 </body>
 </html>
