@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="relogio()">
+    <section >
+        <div id="horario"></div>
+        <div id="semana"></div>
+    </section>
+    <script>
+        function relogio() {
+        var dia = new Date();
+        var hora = dia.getHours();
+        var min = dia.getMinutes();
+        var sec = dia.getSeconds();
+
+        // Adicionando zero à esquerda se for menor que 10
+        hora = hora < 10 ? "0" + hora : hora;
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+
+        var res = document.getElementById('horario');
+        res.innerHTML = `${hora}:${min}:${sec}`;
+    }
+
+    // Chamar a função a cada segundo (1000 milissegundos)
+    setInterval(relogio, 1000);
+
+    // Chamar a função imediatamente para exibir o horário inicial
+    relogio();
+        
+    </script>
+</body>
+</html>
