@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size:30px;
+}
+section{
+    border: 3px solid white;
+    width: 500px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 9px;
+}
+#dtd{
+    color: rgb(13, 241, 165);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+#semana{
+    color: rgb(13, 241, 165);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+#horas{
+    color: rgb(13, 241, 165);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
