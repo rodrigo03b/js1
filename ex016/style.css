@@ -1,35 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+:root{
+    --font-01: 'Cinzel', serif;
+}
 body{
     background-color: black;
     color: white;
 }
 header{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:var(--font-01);
     text-align: center;
     font-size:30px;
 }
 section{
-    border: 3px solid white;
+    border: 2px solid white;
     width: 500px;
     margin: auto;
     color: white;
     text-align: center;
     padding: 9px;
+    border-radius: 50px;
 }
 #dtd{
     color: rgb(13, 241, 165);
-    font-family: 'Courier New', Courier, monospace;
+    font-family:var(--font-01);
     font-size: 30px;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(187, 187, 187);
 }
 #semana{
     color: rgb(13, 241, 165);
-    font-family: 'Courier New', Courier, monospace;
+    font-family:var(--font-01);
     font-size: 30px;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 #horas{
     color: rgb(13, 241, 165);
-    font-family: 'Courier New', Courier, monospace;
+    font-family:serif;
     font-size: 30px;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }

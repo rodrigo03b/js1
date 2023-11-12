@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --font-1:'Bebas Neue', sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+section{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+#rx1{
+    color: rgba(90, 99, 107, 0.315);
+    transition-duration: 1s;
+    font-size: 2em;
+    font-family: var(--font-1);
+    text-shadow: 3px 3px 9px white;
+}
+#rx2{
+    font-size: 2em;
+    font-family: var(--font-1);
+}
+#rx3{
+    color: rgba(90, 99, 107, 0.315);
+    font-family: var(--font-1);
+    font-size: 2em;
+    text-shadow: 3px 3px 9px white;
+}
