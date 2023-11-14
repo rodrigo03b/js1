@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>inicio</h1>
+        <nav>
+            <ul>
+                <li id="navegar"><a href="#">home</a></li>
+                <li id="navegar"><a href="#">home</a></li>
+                <li id="navegar"><a href="#">home</a></li>
+                <li id="navegar"><a href="#">home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div onload="relogio()">
+            <div id="relo"></div>  
+        </div>
+        <section id="sesao1">
+            <h1 id="tit1">texto 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae porro beatae eligendi error dignissimos doloremque architecto inventore praesentium mollitia dolorum, facere minus enim exercitationem sit est doloribus illo perspiciatis! Voluptas.</p>
+        </section>
+    </main>
+    <script>
+        function relogio(){
+            var data = new Date()
+            var hora = data.getHours()
+            var mnt = data.getMinutes()
+            var seg = data.getSeconds()
+            var res =document.getElementById('relo')
+            res.style.textAlign = 'center'
+            res.style.fontSize = '30px'
+            res.innerHTML = `${hora}:${mnt}:${seg}`
+        }
+        setInterval(relogio, 1000)
+        relogio();
+    </script>
+</body>
+</html>
