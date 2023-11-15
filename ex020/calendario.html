@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            display: block;
+            width: 50%;
+            border-radius: 20px;
+            border: 4px solid ;
+            margin: auto;
+        }
+        #hora{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body onload="carregar()" id="cor">
+    <header>
+        <h1>HORARIO</h1>
+    </header>
+    <section>
+    <div id="hor"></div>
+    <div>
+        <img id="foto" src="manhao.png" alt="manha">
+    </div>
+    <br>
+    <div id="hora"></div>
+    <div id="mes"></div>
+    <div id="data"></div>
+    <div id="dia"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
