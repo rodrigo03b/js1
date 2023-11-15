@@ -22,47 +22,47 @@ function carregar(){
     var hora2 = dat.getHours()
     var minut = dat.getMinutes()
     var segun = dat.getSeconds()
-    horas.innerHTML = `${hora2}:${minut}:${segun}`
+    horas.innerHTML = `${hora2.toString().padStart(2, '0')}:${minut.toString().padStart(2, '0')}:${segun.toString().padStart(2, '0')}`;
     //mês
     var ms = document.getElementById('mes')
     var miss = dat.getMonth()+1
     switch(miss){
             case 1:
-                ms.innerHTML = 'janeiro'
-                break
+                ms.innerHTML = 'janeiro';
+                break;
                 case 2:
-                ms.innerHTML = 'fevereiro'
-                    break
-                    case 3:
-                    ms.innerHTML = 'março'
-                        break
+                ms.innerHTML = 'fevereiro';
+                    break;
+                    case 3:;
+                    ms.innerHTML = 'março';
+                        break;
                         case 4:
-                        ms.innerHTML = 'abril'
-                            break
+                        ms.innerHTML = 'abril';
+                            break;
                             case 5: 
-                            ms.innerHTML = 'maio'
-                            break
+                            ms.innerHTML = 'maio';
+                            break;
                             case 6:
-                            ms.innerHTML = 'junho'
-                                break
+                            ms.innerHTML = 'junho';
+                                break;
                                 case 7:
-                                ms.innerHTML = 'julho'
-                                    break
+                                ms.innerHTML = 'julho';
+                                    break;
                                     case 8: 
-                                    ms.innerHTML = 'agosto'
-                                    break
+                                    ms.innerHTML = 'agosto';
+                                    break;
                                     case 9:
-                                    ms.innerHTML = 'setembro'
-                                        break
+                                    ms.innerHTML = 'setembro';
+                                        break;
                                         case 10: 
-                                        ms.innerHTML = 'outubro'
-                                        break
+                                        ms.innerHTML = 'outubro';
+                                        break;
                                         case 11:
-                                        ms.innerHTML = 'novembro'
-                                            break
+                                        ms.innerHTML = 'novembro';
+                                            break;
                                             case 12: 
-                                            ms.innerHTML = 'desembro'
-                                            break
+                                            ms.innerHTML = 'desembro';
+                                            break;
     }
     var dma = document.getElementById("data")
     var dia = dat.getDate()
