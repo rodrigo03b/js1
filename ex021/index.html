@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>?????</h1>
+    </header>
+    <section>
+        <div>
+            <label for="vto">sua idade:</label>
+            <input type="number" name="num1" id="num1">
+            <input type="button" value="verificar" onclick="teste()">
+            <div id="resultado"></div>
+        </div>
+    </section>
+    <script>
+        function teste(){
+            var n1 = document.getElementById('num1').value
+            var res = document.getElementById("resultado")
+            if(n1 == 0){
+                window.alert("erro!")            }
+            else if(n1 < 16){
+                res.innerHTML = 'nao vota'
+            }
+            else if(n1 < 18 || n1 > 65){
+                res.innerHTML = 'voto opicional'
+            }
+            else{
+                res.innerHTML = 'voto obrigatorio'
+            }
+        }
+    </script>
+</body>
+</html>
