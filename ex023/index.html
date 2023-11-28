@@ -7,13 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>tabuada</h1>
+    </header>
     <main>
-        <label for="inicio">inicio:</label>
+        <label for="num">numero</label>
+        <br>
         <input type="number" name="num1" id="num1">
-        <input type="button" value="coontar" onclick="ver()"
+        <br>
+        <input id="bota" type="button" value="ver" onclick="verificar()">
         <div id="res"></div>
     </main>
     <script>
+        function verificar(){
+            var nt1 = document.getElementById('num1')
+            var res= document.getElementById('res')
+            var numero = Number(nt1.value)
+            res.innerHTML = ''
+            for(var po = 1; po <= 10; po++){
+                res.innerHTML += `${po} + ${numero} = ${po+ numero}<br>`
+            }
+        }
     </script>
 </body>
 </html>
